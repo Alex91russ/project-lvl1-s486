@@ -1,6 +1,6 @@
 {
   "name": "alexprog_project1-brain-games",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "files": [
@@ -21,5 +21,8 @@
   },
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.9"
   }
 }
