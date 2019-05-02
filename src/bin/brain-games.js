@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
-import getName from '../index';
+import getName from '..';
 
 console.log('Welcome to the Brain Games!');
 getName();
