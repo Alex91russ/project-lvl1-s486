@@ -13,7 +13,8 @@ const brainCalc = () => {
     const number1 = getNumber(11, 25);
     const number2 = getNumber(1, 10);
     const currentOperation = signs[getNumber(0, signs.length - 1)];
-    const question = readlineSync.question(`Question: ${number1} ${currentOperation} ${number2} ? `);
+    console.log(`Question: ${number1} ${currentOperation} ${number2} ? `);
+    const currentAnswer = readlineSync.question('Your answer: ');
     const getRightAsnwer = (operator) => {
       if (operator === '+') {
         return number1 + number2;
@@ -23,13 +24,11 @@ const brainCalc = () => {
       }
       return number1 * number2;
     };
-    if (Number(question) === getRightAsnwer(currentOperation)) {
+    if (Number(currentAnswer) === getRightAsnwer(currentOperation)) {
       count += 1;
-      console.log(`Your answer: ${question}`);
       console.log('Correct!');
     } else {
-      console.log(`Your answer: ${question}`);
-      console.log(`${question} is wrong answer ;(. Correct answer was ${getRightAsnwer(currentOperation)}`);
+      console.log(`${currentAnswer} is wrong answer ;(. Correct answer was ${getRightAsnwer(currentOperation)}`);
       return console.log(`Let's try again, ${getName}!`);
     }
   }
