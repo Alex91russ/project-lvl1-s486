@@ -1,41 +1,27 @@
-import readlineSync from 'readline-sync';
+import startGame from '..';
+import { getNumber } from '../functions';
+
+
+const instruction = 'What is the result of the expression? \n';
 
 const brainCalc = () => {
-  console.log('Welcome to the Brain Games!');
-  console.log('What is the result of the expression?');
-  console.log('');
-  const getName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${getName}!`);
-  const getNumber = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+  const number1 = getNumber(11, 25);
+  const number2 = getNumber(1, 10);
   const signs = ['+', '-', '*'];
-  let count = 0;
-  for (let i = 0; i < 3; i += 1) {
-    const number1 = getNumber(11, 25);
-    const number2 = getNumber(1, 10);
-    const currentOperation = signs[getNumber(0, signs.length - 1)];
-    console.log(`Question: ${number1} ${currentOperation} ${number2} ? `);
-    const currentAnswer = readlineSync.question('Your answer: ');
-    const getRightAsnwer = (operator) => {
-      if (operator === '+') {
-        return number1 + number2;
-      }
-      if (operator === '-') {
-        return number1 - number2;
-      }
-      return number1 * number2;
-    };
-    if (Number(currentAnswer) === getRightAsnwer(currentOperation)) {
-      count += 1;
-      console.log('Correct!');
-    } else {
-      console.log(`${currentAnswer} is wrong answer ;(. Correct answer was ${getRightAsnwer(currentOperation)}`);
-      return console.log(`Let's try again, ${getName}!`);
+  const currentOperation = signs[getNumber(0, signs.length - 1)];
+  const getRightAsnwer = (operator) => {
+    if (operator === '+') {
+      return number1 + number2;
     }
-  }
-  if (count === 3) {
-    console.log(`Congratulations, ${getName}!`);
-  }
-  return console.log('');
+    if (operator === '-') {
+      return number1 - number2;
+    }
+    return number1 * number2;
+  };
+  return {
+    question: `${number1} ${currentOperation} ${number2}`,
+    answer: String(getRightAsnwer(currentOperation)),
+  };
 };
 
-export default brainCalc;
+export default () => startGame(brainCalc, instruction);
