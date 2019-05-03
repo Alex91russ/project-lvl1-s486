@@ -8,7 +8,7 @@ const startGame = (nameGame, instuction) => {
   console.log(`Hello, ${nameUser}`);
   for (let round = 1; round <= 3; round += 1) {
     const task = nameGame();
-    console.log(`Question: ${task.question}`);
+    console.log(`Question: ${task.question} ?`);
 
     const currentAnswer = readlineSync.question('Your answer: ');
 
