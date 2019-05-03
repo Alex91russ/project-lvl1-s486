@@ -4,5 +4,7 @@
 
 [![Build Status](https://travis-ci.org/Alex91russ/project-lvl1-s486.svg?branch=master)](https://travis-ci.org/Alex91russ/project-lvl1-s486)
 
-[![asciicast](https://asciinema.org/a/RjTHNXZALUVHwMb8aUAdb4ASm)](https://asciinema.org/a/RjTHNXZALUVHwMb8aUAdb4ASm)
+<h2>Install and play in brain-even</h2>
+
+[![asciicast](https://asciinema.org/a/RjTHNXZALUVHwMb8aUAdb4ASm.svg)](https://asciinema.org/a/RjTHNXZALUVHwMb8aUAdb4ASm)
 
