@@ -9,9 +9,7 @@ const startGame = (nameGame, instuction) => {
   for (let round = 1; round <= 3; round += 1) {
     const task = nameGame();
     console.log(`Question: ${task.question} ?`);
-
     const currentAnswer = readlineSync.question('Your answer: ');
-
     if (currentAnswer === task.answer) {
       console.log('Currect!');
     } else {
