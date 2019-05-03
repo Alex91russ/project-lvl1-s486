@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-import getName from '..';
+import { getName } from '../functions';
 
 console.log('Welcome to the Brain Games!');
-getName();
+const nameUser = getName();
+console.log(`Hello, ${nameUser}`);

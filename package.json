@@ -1,7 +1,7 @@
 {
   "name": "alexprog_project1-brain-games",
   "version": "1.0.16",
-  "description": "",
+  "description": "my first project",
   "main": "index.js",
   "files": [
     "dist"
