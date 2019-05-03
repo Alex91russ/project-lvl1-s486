@@ -21,3 +21,7 @@
 <h2>Install and play in brain-progression</h2>
 
 [![asciicast](https://asciinema.org/a/oGA00tRk1FqRJl7hBqv4tcFry.svg)](https://asciinema.org/a/oGA00tRk1FqRJl7hBqv4tcFry)
+
+<h2>Install and play in brain-prime</h2>
+
+[![asciicast](https://asciinema.org/a/Vx0vg2JskpTL7wy87RIiOsiaH.svg)](https://asciinema.org/a/Vx0vg2JskpTL7wy87RIiOsiaH)
