@@ -2,17 +2,32 @@
   "name": "alexprog_project1-brain-games",
   "version": "1.0.17",
   "description": "my first project",
-  "main": "index.js",
   "files": [
     "dist"
   ],
+  "bin": {
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js",
+    "brain-calc": "dist/bin/brain-calc.js",
+    "brain-gcd": "dist/bin/brain-gcd.js",
+    "brain-progression": "dist/bin/brain-progression.js",
+    "brain-prime": "dist/bin/brain-prime.js" 
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
-  "author": "alexprog",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex91russ/project-lvl1-s486.git"
+  },
+  "author": "Alexander Kochetkov",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alex91russ/project-lvl1-s486/issues"
+  },
+  "homepage": "https://github.com/Alex91russ/project-lvl1-s486#readme",
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
@@ -23,14 +38,6 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.17.2"
-  },
-  "bin": {
-    "brain-games": "dist/bin/brain-games.js",
-    "brain-even": "dist/bin/brain-even.js",
-    "brain-calc": "dist/bin/brain-calc.js",
-    "brain-gcd": "dist/bin/brain-gcd.js",
-    "brain-progression": "dist/bin/brain-progression.js",
-    "brain-prime": "dist/bin/brain-prime.js" 
   },
   "dependencies": {
     "readline-sync": "^1.4.9"
