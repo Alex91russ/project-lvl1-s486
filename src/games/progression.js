@@ -1,5 +1,5 @@
 import startGame from '..';
-import { getNumber } from '../functions';
+import { getNumber } from '../utils';
 
 const instruction = 'What number is missing in the progression? \n';
 

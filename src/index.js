@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { getName } from './functions';
+import { getName } from './utils';
 
 const startGame = (nameGame, instuction) => {
   console.log('Welcome to the Brain Games!');
