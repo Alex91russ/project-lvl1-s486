@@ -1,26 +1,24 @@
 import startGame from '..';
-import { getNumber } from '../functions';
+import { getNumber } from '../utils';
 
-const instruction = 'What is the result of the expression? \n';
+const instruction = 'What is the result of the expression?';
+const signs = ['+', '-', '*'];
 
 const brainCalc = () => {
-  const number1 = getNumber(11, 25);
-  const number2 = getNumber(1, 10);
-  const signs = ['+', '-', '*'];
+  const firstNum = getNumber(11, 25);
+  const secondNum = getNumber(1, 10);
   const currentOperation = signs[getNumber(0, signs.length - 1)];
-  const getRightAsnwer = (operator) => {
-    if (operator === '+') {
-      return number1 + number2;
-    }
-    if (operator === '-') {
-      return number1 - number2;
-    }
-    return number1 * number2;
-  };
-  return {
-    question: `${number1} ${currentOperation} ${number2}`,
-    answer: String(getRightAsnwer(currentOperation)),
-  };
+  const question = `${firstNum} ${currentOperation} ${secondNum}`;
+  switch (currentOperation) {
+    case '+':
+      return { question, answer: String(firstNum + secondNum) };
+    case '-':
+      return { question, answer: String(firstNum - secondNum) };
+    case '*':
+      return { question, answer: String(firstNum * secondNum) };
+    default:
+      return null;
+  }
 };
 
 export default () => startGame(brainCalc, instruction);
