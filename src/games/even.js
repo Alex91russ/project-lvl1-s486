@@ -1,14 +1,14 @@
 import startGame from '..';
-import { getNumber } from '../functions';
+import { getNumber } from '../utils';
 
-const instruction = 'Answer "yes" if number even otherwise answer "no". \n';
+const instruction = 'Answer "yes" if number even otherwise answer "no".';
+const isEven = number => number % 2 === 0;
 
 const brainEven = () => {
-  const number = getNumber(1, 49);
-  return {
-    question: `${number}`,
-    answer: number % 2 === 0 ? 'yes' : 'no',
-  };
+  const question = getNumber(1, 49);
+  const answer = isEven(question) ? 'yes' : 'no';
+
+  return { question, answer };
 };
 
 export default () => startGame(brainEven, instruction);
