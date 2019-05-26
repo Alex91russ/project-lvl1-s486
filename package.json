@@ -22,6 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/Alex91russ/project-lvl1-s486.git"
   },
+  "keywords": [
+    "brain-games",
+    "alexprog",
+    "hexlet",
+    "fun-games"
+  ],
   "author": "Alexander Kochetkov",
   "license": "ISC",
   "bugs": {
