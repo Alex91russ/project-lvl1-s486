@@ -28,11 +28,11 @@ Type to CLI: `brain-<name of the game>`. For example:
 ---
 
 ## Gameplay videos
-* [Install and play in brain-even](#brain-even)
-* [Install and play in brain-calc](#brain-calc)
-* [Install and play in brain-gcd](#brain-gcd)
-* [Install and play in brain-prime](#brain-prime)
-* [BInstall and play in brain-progression](#brain-progression)
+* [Brain: Even](#install-and-play-in-brain-even)
+* [Brain: Calc](#install-and-play-in-brain-calc)
+* [Brain: Gcd](#install-and-play-in-brain-gcd)
+* [Brain: Prime](#install-and-play-in-brain-prime)
+* [Brain: Progression](#install-and-play-in-brain-progression)
 
 ## Install and play in brain-even
 
