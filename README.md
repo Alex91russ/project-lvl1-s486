@@ -11,12 +11,28 @@
 * **Brain: Prime** - count a prime number or not ([wiki](https://en.wikipedia.org/wiki/Prime_number))
 * **Brain: Progression** - write the missing number in progression
 
+## How to Install games
+
+  ```sh
+  $ sudo npm install -g alexprog_project1-brain-games
+  ```
+## How to Use
+Type to CLI: `brain-<name of the game>`. For example:
+  ```sh
+  $ brain-calc
+  ```
+  or
+  ```sh
+  $ brain-progression
+  ```
+---
+
 ## Gameplay videos
-* [Brain: Even](#brain-even)
-* [Brain: Calc](#brain-calc)
-* [Brain: GCD](#brain-gcd)
-* [Brain: Prime](#brain-prime)
-* [Brain: Progression](#brain-progression)
+* [Install and play in brain-even](#brain-even)
+* [Install and play in brain-calc](#brain-calc)
+* [Install and play in brain-gcd](#brain-gcd)
+* [Install and play in brain-prime](#brain-prime)
+* [BInstall and play in brain-progression](#brain-progression)
 
 ## Install and play in brain-even
 
